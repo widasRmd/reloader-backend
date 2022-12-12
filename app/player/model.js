@@ -39,8 +39,10 @@ let playerSchema = mongoose.Schema({
     avatar : {  
         type : String
     },
-    fileName : {
-        type : String
+    status : {
+        type : String,
+        enum : ['Y', 'N'],
+        default : 'Y'
     },
     favorite : {
         type : mongoose.Schema.Types.ObjectId,
