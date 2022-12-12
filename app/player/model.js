@@ -42,10 +42,10 @@ let playerSchema = mongoose.Schema({
     fileName : {
         type : String
     },
-    favorite : [{
+    favorite : {
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Category'
-    }],
+    },
 
 }, { timestamps : true})
 
